@@ -7,7 +7,7 @@ Project("{3466B219-07DB-46AE-8697-CFD2A1650EC8}") = "IntegrationFactory", "Integ
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OnPremiseBatchFile", "OnPremiseBatchFile", "{79DC05F4-3F42-428E-A246-E01DC2792C46}"
 	ProjectSection(SolutionItems) = preProject
-		IntegrationFactory\Dependencies\SampleData.csv = IntegrationFactory\Dependencies\SampleData.csv
+		SampleData.csv = SampleData.csv
 	EndProjectSection
 EndProject
 Global
