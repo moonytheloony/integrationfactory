@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{3466B219-07DB-46AE-8697-CFD2A1650EC8}") = "IntegrationFactory", "IntegrationFactory\IntegrationFactory.dfproj", "{8981C68E-C4DE-46F1-B1CC-F642266BAA1D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OnPremiseBatchFile", "OnPremiseBatchFile", "{79DC05F4-3F42-428E-A246-E01DC2792C46}"
+	ProjectSection(SolutionItems) = preProject
+		IntegrationFactory\Dependencies\SampleData.csv = IntegrationFactory\Dependencies\SampleData.csv
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8981C68E-C4DE-46F1-B1CC-F642266BAA1D}.Debug|x86.ActiveCfg = Debug|x86
+		{8981C68E-C4DE-46F1-B1CC-F642266BAA1D}.Debug|x86.Build.0 = Debug|x86
+		{8981C68E-C4DE-46F1-B1CC-F642266BAA1D}.Release|x86.ActiveCfg = Release|x86
+		{8981C68E-C4DE-46F1-B1CC-F642266BAA1D}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

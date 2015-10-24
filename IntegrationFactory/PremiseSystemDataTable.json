@@ -1,0 +1,47 @@
+﻿{
+  "$schema": "http://datafactories.schema.management.azure.com/schemas/2015-08-01/Microsoft.DataFactory.Table.json",
+  "name": "PremiseSystemDataTable",
+  "properties": {
+    "type": "FileShare",
+    "linkedServiceName": "OnPremisesFileSystemLinkedService",
+    "typeProperties": {
+      "folderPath": "E:\\OnPremiseBatchFile",
+      "fileName": "SampleData.csv"
+    },
+    "structure": [
+      {
+        "name": "OrderDate",
+        "type": "Datetime"
+      },
+      {
+        "name": "Region",
+        "type": "String"
+      },
+      {
+        "name": "Rep",
+        "type": "String"
+      },
+      {
+        "name": "Item",
+        "type": "String"
+      },
+      {
+        "name": "Units",
+        "type": "Int32"
+      },
+      {
+        "name": "Unit Cost",
+        "type": "Decimal"
+      },
+      {
+        "name": "Total",
+        "type": "Decimal"
+      }
+    ],
+    "external": true,
+    "availability": {
+      "frequency": "Minute",
+      "interval": 15
+    }
+  }
+}

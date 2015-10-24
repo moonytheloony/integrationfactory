@@ -1,0 +1,45 @@
+﻿{
+    "name": "CopyActivityFileToDatabase",
+    "properties": {
+        "description": "Copy sales data batch file to sales database",
+        "activities": [
+            {
+                "type": "Copy",
+                "typeProperties": {
+                    "source": {
+                        "type": "FileSystemSource"
+                    },
+                    "sink": {
+                        "type": "SqlSink",
+                        "writeBatchSize": 1,
+                        "writeBatchTimeout": "00:30:00"
+                    }
+                },
+                "inputs": [
+                    {
+                        "name": "PremiseSystemDataTable"
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "AzureSQLDataTable"
+                    }
+                ],
+                "policy": {
+                    "timeout": "00:10:00",
+                    "concurrency": 1,
+                    "retry": 1
+                },
+                "scheduler": {
+                    "frequency": "Minute",
+                    "interval": 15
+                },
+                "name": "CopyPremiseBatchFileToDatabase"
+            }
+        ],
+        "start": "2015-07-12T00:00:00Z",
+        "end": "2016-07-13T00:00:00Z",
+        "isPaused": false,
+        "hubName": "integrationfactory_hub"
+    }
+}

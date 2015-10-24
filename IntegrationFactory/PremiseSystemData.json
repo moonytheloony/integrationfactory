@@ -1,0 +1,13 @@
+﻿{
+  "$schema": "http://datafactories.schema.management.azure.com/schemas/2015-08-01/Microsoft.DataFactory.LinkedService.json",
+  "name": "OnPremisesFileSystemLinkedService",
+  "properties": {
+    "type": "OnPremisesFileServer",
+    "typeProperties": {
+      "host": "localhost",
+      "userId": "DOMAIN\USERNAME",
+      "password": "YOUR SYSTEM PASSWORD",
+      "gatewayName": "integrationfactorygateway"
+    }
+  }
+}
