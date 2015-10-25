@@ -5,9 +5,9 @@
     "type": "OnPremisesFileServer",
     "typeProperties": {
       "host": "localhost",
-      "userId": "DOMAIN\USERNAME",
+      "userId": "DOMAIN\USERNAME OR USERNAME",
       "password": "YOUR SYSTEM PASSWORD",
-      "gatewayName": "integrationfactorygateway"
+      "gatewayName": "YOUR GATEWAY NAME"
     }
   }
 }
