@@ -5,7 +5,7 @@
     "type": "FileShare",
     "linkedServiceName": "OnPremisesFileSystemLinkedService",
     "typeProperties": {
-      "folderPath": "E:\\OnPremiseBatchFile",
+      "folderPath": "DRIVE LETTER:\\FOLDER PATH TO YOUR BATCH FILE",
       "fileName": "SampleData-{Year}-{Month}-{Day}.csv",
       "partitionedBy": [
         {

@@ -7,7 +7,7 @@ Project("{3466B219-07DB-46AE-8697-CFD2A1650EC8}") = "IntegrationFactory", "Integ
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OnPremiseBatchFile", "OnPremiseBatchFile", "{79DC05F4-3F42-428E-A246-E01DC2792C46}"
 	ProjectSection(SolutionItems) = preProject
-		SampleData.csv = SampleData.csv
+		SampleData-yyyy-mm-dd.csv = SampleData-yyyy-mm-dd.csv
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{681687F7-CD11-4D46-B635-1BE0F805945E}"
