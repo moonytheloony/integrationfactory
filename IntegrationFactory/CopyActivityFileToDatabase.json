@@ -31,8 +31,8 @@
                     "retry": 1
                 },
                 "scheduler": {
-                    "frequency": "Minute",
-                    "interval": 15
+                    "frequency": "Day",
+                    "interval": 1
                 },
                 "name": "CopyPremiseBatchFileToDatabase"
             }

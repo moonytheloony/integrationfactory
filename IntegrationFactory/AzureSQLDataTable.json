@@ -38,8 +38,8 @@
       "tableName": "SalesData"
     },
     "availability": {
-      "frequency": "Minute",
-      "interval": 15
+      "frequency": "Day",
+      "interval": 1
     }
   }
 }

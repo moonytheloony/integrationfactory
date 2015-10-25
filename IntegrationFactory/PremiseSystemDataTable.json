@@ -6,7 +6,33 @@
     "linkedServiceName": "OnPremisesFileSystemLinkedService",
     "typeProperties": {
       "folderPath": "E:\\OnPremiseBatchFile",
-      "fileName": "SampleData.csv"
+      "fileName": "SampleData-{Year}-{Month}-{Day}.csv",
+      "partitionedBy": [
+        {
+          "name": "Year",
+          "value": {
+            "type": "DateTime",
+            "date": "SliceStart",
+            "format": "yyyy"
+          }
+        },
+        {
+          "name": "Month",
+          "value": {
+            "type": "DateTime",
+            "date": "SliceStart",
+            "format": "MM"
+          }
+        },
+        {
+          "name": "Day",
+          "value": {
+            "type": "DateTime",
+            "date": "SliceStart",
+            "format": "dd"
+          }
+        }
+      ]
     },
     "structure": [
       {
@@ -40,8 +66,8 @@
     ],
     "external": true,
     "availability": {
-      "frequency": "Minute",
-      "interval": 15
+      "frequency": "Day",
+      "interval": 1
     }
   }
 }
